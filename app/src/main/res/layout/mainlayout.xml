@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to google Books API "
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/shivam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By Shivam Agrawal "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/welcome"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/shivam"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp"
+        android:id="@+id/searchbox"
+        android:textSize="20dp"
+        android:hint="Enter Your Book Here"
+        android:background="@drawable/shape"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/searchbox"
+        android:text="Search"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:onClick="search"
+        android:elevation="20dp"
+        android:background="@drawable/shape"/>
+
+    <TextView
+        android:id="@+id/good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have a good day :) "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
